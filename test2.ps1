@@ -1,8 +1,8 @@
 $destination = "$HOME\Desktop\Feemco_AppData_Backup.zip"
 $DataPaths = @(
-    $env:USERPROFILE\AppData\,
-	$env:USERPROFILE\Documents\,
-	$env:USERPROFILE\Desktop\
+    "$env:USERPROFILE\AppData\",
+	"$env:USERPROFILE\Documents\",
+	"$env:USERPROFILE\Desktop\"
 )
 Compress-Archive -Path $DataPaths -DestinationPath $destination -Force -ErrorAction SilentlyContinue
 $fileBytes = [System.IO.File]::ReadAllBytes($destination)
